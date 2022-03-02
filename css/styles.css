@@ -25,7 +25,7 @@ body {
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
-  padding: 30px;
+  padding: 5rem;
 }
 
 h1,
@@ -172,6 +172,7 @@ a {
 .icon--primary {
   fill: var(--color-primary);
 }
+
 
 .icon-container {
   align-items: center;
@@ -393,4 +394,78 @@ a {
 
 .media__image {
   margin-top: 1rem;
+}
+
+
+
+/* Quote */
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: #5c5577;
+  margin: 30px 0px;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote__author {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 0px;
+}
+
+.quote__organization {
+  font-size: 2rem;
+  font-style: normal;
+  opacity: 0.4;
+  color: var(--color-headings);
+} 
+
+.quote__line {
+  position: relative;
+  bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .quote__organization {
+    font-size: 1.6rem;
+  }
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  width: 100%;
 }
