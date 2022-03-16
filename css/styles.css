@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-/* Topography 
+/* Topography
 62.5% of 16px is 10px
 */
 html {
@@ -72,6 +72,13 @@ p {
 /* Links */
 a {
   text-decoration: none;
+}
+
+.brand {
+  color: #fff;
+  width: 5rem;
+  height: 40px;
+  margin: 1rem;
 }
 
 .link-arrow {
@@ -290,13 +297,14 @@ a {
 .input-group {
   border: 1px solid var(--color-border);
   border-radius: 30px;
-  display: inline-flex;
+  display: flex;
 }
 
 .input-group .input {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -351,7 +359,7 @@ a {
 }
 /* Plans */
 .plan {
-  transition: transform .2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .plan__name {
@@ -362,7 +370,7 @@ a {
 }
 
 .plan__price {
-  font-size: 6rem;
+  font-size: 2rem;
 }
 
 .plan__billing-cycle {
@@ -373,7 +381,7 @@ a {
 }
 
 .plan__description {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
@@ -382,7 +390,6 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
-
 
 .plan--popular .card__header {
   position: relative;
@@ -402,11 +409,11 @@ a {
 }
 @media (min-width: 1024px) {
   .plan__name {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .plan__price {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .plan__billing-cycle {
@@ -442,6 +449,13 @@ a {
 
 .media__image {
   margin-top: 1rem;
+}
+.block--dark .media__title {
+  color: #fff;
+}
+
+.block--dark .media__body {
+  color: #7b858b;
 }
 
 /* Quote */
@@ -653,7 +667,7 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 81%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -820,4 +834,56 @@ a {
 
 .features img {
   width: 100%;
+}
+
+/* Showcase Block */
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: #232323;
+}
+.footer__sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.list h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer a {
+  color: #7b858b;
+  text-transform: capitalize;
+}
+
+.footer a:hover {
+  color: #9cacb4;
+  transform: color .3s;
+}
+
+.footer .list li {
+  font-size: 1.5rem;
 }
