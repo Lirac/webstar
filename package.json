@@ -2,7 +2,7 @@
   "name": "Moshify",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "parcel": "^2.3.2"
